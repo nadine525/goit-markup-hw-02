@@ -1,0 +1,42 @@
+/* визначення основних колоьрів тексту та фону */ 
+body{
+  background-color: #ffffff;
+  color: #757575;
+}
+/* прибирання крапочок в ненумерованих списках */
+.list {
+    list-style: none;
+}
+/* основний колір техту #757575 */
+/* вториний колір техту #212121 */
+/* білий #FFFFFF */
+/* колір акценту #2196F3 */
+
+/* виділення першої частини логотипу синім кольром та другої частини - чорним */
+.logo {
+    color: #000000;
+}
+
+.logo-accent {
+    color: #2196F3;
+}
+
+/* оформлення навігації */
+.site-nav a{
+    color: #212121;
+    text-decoration-line: none;
+}
+.site-nav a:hover,
+.site-nav a:focus{
+    color: #2196F3;
+}
+
+
+/* оформлення контактів */
+.contacts a{
+    color: #757575;
+}
+.contacts a:hover,
+.contacts a:focus {
+    color: #2196F3;
+}

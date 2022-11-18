@@ -82,12 +82,11 @@ body{
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-
 /* оформлення кнопки */
 .button {
     background-color: var(--background-color-exception);
     color: var(--simple-white-text-color);
-    font-family: 'Roboto';
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -101,30 +100,50 @@ body{
     background-color: #188CE8;
 }
 
-
-
 /* оформлення заголовків секцій, які є однаковими */
 .section-title {
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 /* оформлення секціі Наші переваги */
 .features .title {
     color: var(--title-text-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
 }
-
+.title .description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
 /* оформлення прикладів робіт */
 
 
 /* оформлення секціі Наша команда */
 .section-team{
-    background-color: #F5F4FA;;
+    background-color: #F5F4FA;
 }
+
 .team .name {
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team .position {
     color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.18; 
 }
 
 /* оформлення футера */
@@ -139,23 +158,35 @@ body{
     color: #FFFFFF;
     text-decoration-line: none;
     font-style: normal;  
+    font-size: 14px;
+    line-height: 1.71;
 }
 
 .address .mail {
     color: #FFFFFF;
     text-decoration-line: none;
     font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
 }
 .address .tel {
     color: #FFFFFF;
     text-decoration-line: none;
-    font-style: normal;;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* оформлення Портфоліо */
 .filter button {
     background-color: #F5F4FA;
     color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
 }
 
 .filter button:hover,

@@ -1,42 +1,176 @@
-/* визначення основних колоьрів тексту та фону */ 
-body{
-  background-color: #ffffff;
-  color: #757575;
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --background-color: #ffffff;
+    --simple-white-text-color:#FFFFFF;
+    --background-color-exception:#2196F3;
 }
+
+/* визначення основних кольорів тексту та фону */ 
+body{
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
 /* прибирання крапочок в ненумерованих списках */
 .list {
     list-style: none;
 }
-/* основний колір техту #757575 */
-/* вториний колір техту #212121 */
-/* білий #FFFFFF */
-/* колір акценту #2196F3 */
 
-/* виділення першої частини логотипу синім кольром та другої частини - чорним */
+/* оформлення логотипу */
 .logo {
     color: #000000;
-}
+    text-decoration-line: none;
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+}
 .logo-accent {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 /* оформлення навігації */
 .site-nav a{
-    color: #212121;
+    color: var(--title-text-color);
     text-decoration-line: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
 }
 .site-nav a:hover,
 .site-nav a:focus{
-    color: #2196F3;
+    color: var(--accent-color);
+}
+
+.site-nav .link-current{
+    color: var(--accent-color);
 }
 
 
 /* оформлення контактів */
 .contacts a{
     color: #757575;
+    text-decoration-line: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
+
 .contacts a:hover,
 .contacts a:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+}
+
+/* оформлення героя */
+.hero {
+    background: #2F303A
+}
+.hero-title {
+    color: var(--simple-white-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* оформлення кнопки */
+.button {
+    background-color: var(--background-color-exception);
+    color: var(--simple-white-text-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus {
+    background-color: #188CE8;
+}
+
+
+
+/* оформлення заголовків секцій, які є однаковими */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* оформлення секціі Наші переваги */
+.features .title {
+    color: var(--title-text-color);
+}
+
+/* оформлення прикладів робіт */
+
+
+/* оформлення секціі Наша команда */
+.section-team{
+    background-color: #F5F4FA;;
+}
+.team .name {
+    color: var(--title-text-color);
+}
+.team .position {
+    color: var(--primary-text-color);
+}
+
+/* оформлення футера */
+.footer {
+    background: #2F303A
+}
+.footer .logo {
+    color: #FFFFFF;
+}
+
+.address .supercription {
+    color: #FFFFFF;
+    text-decoration-line: none;
+    font-style: normal;  
+}
+
+.address .mail {
+    color: #FFFFFF;
+    text-decoration-line: none;
+    font-style: normal;
+}
+.address .tel {
+    color: #FFFFFF;
+    text-decoration-line: none;
+    font-style: normal;;
+}
+
+/* оформлення Портфоліо */
+.filter button {
+    background-color: #F5F4FA;
+    color: #212121;
+}
+
+.filter button:hover,
+.filter button:focus {
+    background-color: var(--accent-color: #2196F3);
+    color: var(--simple-white-text-color)
+}
+
+.portfolio .item {
+    color: #212121;
+}
+.portfolio .catego {
+    color: #757575;
+}
+
+.portfolio a {
+    text-decoration-line: none;
 }

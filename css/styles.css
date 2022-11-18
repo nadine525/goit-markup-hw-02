@@ -86,6 +86,7 @@ body{
 .button {
     background-color: var(--background-color-exception);
     color: var(--simple-white-text-color);
+    cursor: pointer;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -183,6 +184,8 @@ body{
 .filter button {
     background-color: #F5F4FA;
     color: #212121;
+    cursor: pointer;
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;

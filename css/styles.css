@@ -5,6 +5,8 @@
     --background-color: #ffffff;
     --simple-white-text-color:#FFFFFF;
     --background-color-exception:#2196F3;
+    --simple-black-text-color: #000000;
+    --rare-background-color: #F5F4FA;
 }
 
 /* визначення основних кольорів тексту та фону */ 
@@ -22,41 +24,39 @@ body{
 
 /* оформлення логотипу */
 .logo {
-    color: #000000;
+    color: var(--simple-black-text-color);
     text-decoration-line: none;
-    font-family: Raleway, cursive;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    line-height: 1.19;
 }
 .logo-accent {
     color: var(--accent-color);
 }
 
 /* оформлення навігації */
-.site-nav a{
+.site-nav .link{
     color: var(--title-text-color);
     text-decoration-line: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.1;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.site-nav a:hover,
-.site-nav a:focus{
+.site-nav .link:hover,
+.site-nav .link:focus{
     color: var(--accent-color);
 }
 
-.site-nav .link-current{
+.site-nav .link.current{
     color: var(--accent-color);
 }
 
 
 /* оформлення контактів */
-.contacts a{
-    color: #757575;
+.contacts .link{
+    color: var(--primary-text-color);
     text-decoration-line: none;
     font-weight: 500;
     font-size: 14px;
@@ -64,8 +64,8 @@ body{
     letter-spacing: 0.02em;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts .link:hover,
+.contacts .link:focus {
     color: var(--accent-color);
 }
 
@@ -102,16 +102,21 @@ body{
 }
 
 /* оформлення заголовків секцій, які є однаковими */
-.section-title {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* оформлення секціі Наші переваги */
-.features .title {
+.features-title {
     color: var(--title-text-color);
     font-style: normal;
     font-weight: 700;
@@ -119,7 +124,7 @@ body{
     line-height: 1.14;
     text-transform: uppercase;
 }
-.title .description {
+.description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -129,19 +134,18 @@ body{
 
 /* оформлення секціі Наша команда */
 .section-team{
-    background-color: #F5F4FA;
+    background-color: var(--rare-background-color);
 }
-
-.team .name {
+.team-item {
+    color: var(--background-color);
+}
+.team-name {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
 }
-.team .position {
+.team-position {
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.18; 
@@ -152,27 +156,23 @@ body{
     background: #2F303A
 }
 .footer .logo {
-    color: #FFFFFF;
+    color: var(--simple-white-text-color);
 }
 
 .address .supercription {
-    color: #FFFFFF;
+    color: var(--simple-white-text-color);
     text-decoration-line: none;
     font-style: normal;  
     font-size: 14px;
     line-height: 1.71;
 }
 
-.address .mail {
-    color: #FFFFFF;
-    text-decoration-line: none;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
+.address .supercription:hover,
+.address .supercription:focus {
+    color: var(--accent-color);
 }
-.address .tel {
-    color: #FFFFFF;
+.address .mail {
+    color: var(--simple-white-text-color);
     text-decoration-line: none;
     font-style: normal;
     font-size: 14px;
@@ -180,10 +180,29 @@ body{
     color: rgba(255, 255, 255, 0.6);
 }
 
+.address .mail:hover,
+.address .mail:focus {
+    color: var(--accent-color);
+}
+
+.address .tel {
+    color: var(--simple-white-text-color);
+    text-decoration-line: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address .tel:hover,
+.address .tel:focus {
+    color: var(--accent-color);
+}
+
 /* оформлення Портфоліо */
 .filter button {
-    background-color: #F5F4FA;
-    color: #212121;
+    background-color: var(--rare-background-color);
+    color: var(--title-text-color);
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
@@ -194,17 +213,31 @@ body{
 
 .filter button:hover,
 .filter button:focus {
-    background-color: var(--accent-color: #2196F3);
+    background-color: var(--accent-color);
     color: var(--simple-white-text-color)
 }
 
-.portfolio .item {
-    color: #212121;
-}
-.portfolio .catego {
-    color: #757575;
+.portfolio {
+    background-color: var(--background-color);
 }
 
-.portfolio a {
+.portfolio-item {
+    background-color: var(--background-color);
+}
+   
+ .portfolio-caption {  
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-catego {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+.portfolio-link {
     text-decoration-line: none;
 }

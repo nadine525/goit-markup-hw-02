@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
     <title>Портфоліо</title>
     <link rel="stylesheet" href="./css/styles.css">
   </head>
@@ -16,22 +15,22 @@
      <a href="./index.html" class="logo"><span class="logo-accent">Web</span>Studio</a>
         <!--Навігація на інші сторінки-->
         <ul class="site-nav list">
-          <li><a href="./index.html">Студія</a></li>
-          <li><a href="./portfolio.html" class="link-current">Портфоліо</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="./index.html" class="link">Студія</a></li>
+          <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+          <li><a href="#" class="link">Контакти</a></li>
         </ul>
       </nav>
       <!--Контакти-->
       <ul class="contacts list">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
 
     <main>
       <!--Наші роботи-->
       <section>
-        <h1>Приклади робіт</h1>
+        <h1 class="visually-hidden">Приклади робіт</h1>
         <ul class="filter list">
           <li><button class="button" type="button">Усі</button></li>
           <li><button class="button" type="button">Веб-сайти</button></li>
@@ -41,58 +40,58 @@
         </ul>
 
         <ul class="portfolio list">
-            <li><a href="/">
+            <li class="portfolio-item"><a href="/" class="portfolio-link">
                 <img src=./images/macbook-pro.jpg width="370" height="294" alt=“Технокряк“>
-                <h2 class="item">Технокряк</h2>
-                <p class="catego">Веб-сайт</p></a>
+                <h2 class="portfolio-caption">Технокряк</h2>
+                <p class="portfolio-catego">Веб-сайт</p></a>
             </li>
 
-          <li><a href="/">
+          <li class="portfolio-item"><a href="/" class="portfolio-link">
                 <img src="./images/basketboll.jpg" alt="Постер" width="370" height="294">
-                <h2 class="item">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
-                <p class="catego">Дизайн</p></a>
+                <h2 class="portfolio-caption">Постер<span lang="en">New Orlean vs Golden Star</span></h2>
+                <p class="portfolio-catego">Дизайн</p></a>
           </li>
 
-          <li><a href="/">
+          <li class="portfolio-item"><a href="/" class="portfolio-link">
                 <img src="./images/seefood-poster.jpg" alt="Ресторан" width="370" height="294">
-                <h2 class="item">Ресторан<span lang="en">Seafood</span></h2>
-                <p class="catego">Додаток</p></a>
+                <h2 class="portfolio-caption">Ресторан<span lang="en">Seafood</span></h2>
+                <p class="portfolio-catego">Додаток</p></a>
           </li>
 
-          <li><a href="/"> 
+          <li class="portfolio-item"><a href="/" class="portfolio-link"> 
                 <img src="./images/headphones.jpg" alt="Навушники" width="370" height="294">
-                <h2 class="item">Проєкт<span lang="en">Prime</span></h2>
-                <p class="catego">Маркетинг</p></a>
+                <h2 class="portfolio-caption">Проєкт<span lang="en">Prime</span></h2>
+                <p class="portfolio-catego">Маркетинг</p></a>
           </li>
 
-          <li><a href="/"> 
+          <li class="portfolio-item"><a href="/" class="portfolio-link"> 
                 <img src="./images/two-boxes.jpg" alt="Коробки" width="370" height="294">
-                <h2 class="item">Проєкт<span lang="en">Boxes</span></h2>
-                <p class="catego">Додаток</p></a>
+                <h2 class="portfolio-caption">Проєкт<span lang="en">Boxes</span></h2>
+                <p class="portfolio-catego">Додаток</p></a>
           <li>
 
-          <li><a href="/"> 
+          <li class="portfolio-item"><a href="/" class="portfolio-link"> 
                 <img src="./images/black-monitor.jpg" alt="Чорний монітор" width="370" height="294">
-                <h2 class="item">Inspiration has no Borders</h2>
-                <p class="catego">Веб-сайт</p></a>
+                <h2 class="portfolio-caption">Inspiration has no Borders</h2>
+                <p class="portfolio-catego">Веб-сайт</p></a>
           </li>
 
-          <li><a href="/">
+          <li class="portfolio-item"><a href="/" class="portfolio-link">
                 <img src="./images/opened-book.jpg" alt="Відкрита книга" width="370" height="294">
-                <h2 class="item">Видання<span lang="en">Limited Edition</span></h2>
-                <p class="catego">Дизайн</p></a>
+                <h2 class="portfolio-caption">Видання<span lang="en">Limited Edition</span></h2>
+                <p class="portfolio-catego">Дизайн</p></a>
           </li>
 
-          <li><a href="/">
+          <li class="portfolio-item"><a href="/" class="portfolio-link">
                 <img src="./images/lable-with-rope.jpg" alt="Бірка на мотузці" width="370" height="294">
-                <h2 class="item">Проєкт<span lang="en">LAB</span></h2>
-                <p class="catego">Маркетинг</p></a>
+                <h2 class="portfolio-caption">Проєкт<span lang="en">LAB</span></h2>
+                <p class="portfolio-catego">Маркетинг</p></a>
           </li>
 
-          <li><a href="/">
+          <li class="portfolio-item"><a href="/" class="portfolio-link">
                 <img src="./images/hends-and-notebook.jpg" alt="Людські руки над ноутбуком" width="370" height="294">
-                <h2 class="item">Growing Business</h2>
-                <p class="catego">Додаток</p></a>
+                <h2 class="portfolio-caption">Growing Business</h2>
+                <p class="portfolio-catego">Додаток</p></a>
           </li>
         </ul>
       </section>

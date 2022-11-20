@@ -7,6 +7,10 @@
     --background-color-exception:#2196F3;
     --simple-black-text-color: #000000;
     --rare-background-color: #F5F4FA;
+    --background-hero-color: #2F303A;
+    --button-hover-color: #188CE8;
+    --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
+    --background-team-item-color: #FFFFFF;
 }
 
 /* визначення основних кольорів тексту та фону */ 
@@ -36,7 +40,7 @@ body{
 }
 
 /* оформлення навігації */
-.site-nav .link{
+.nav-link{
     color: var(--title-text-color);
     text-decoration-line: none;
     font-weight: 500;
@@ -44,18 +48,18 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.site-nav .link:hover,
-.site-nav .link:focus{
+.nav-link:hover,
+.nav-link:focus{
     color: var(--accent-color);
 }
 
-.site-nav .link.current{
+.nav-link.current{
     color: var(--accent-color);
 }
 
 
 /* оформлення контактів */
-.contacts .link{
+.contacts-link{
     color: var(--primary-text-color);
     text-decoration-line: none;
     font-weight: 500;
@@ -64,14 +68,14 @@ body{
     letter-spacing: 0.02em;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
     color: var(--accent-color);
 }
 
 /* оформлення героя */
 .hero {
-    background: #2F303A
+    background: var(--background-hero-color);
 }
 .hero-title {
     color: var(--simple-white-text-color);
@@ -91,17 +95,22 @@ body{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
 .button:hover,
 .button:focus {
-    background-color: #188CE8;
+    background-color: var(--button-hover-color);
 }
 
 /* оформлення заголовків секцій, які є однаковими */
+.section-title {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -125,7 +134,6 @@ body{
     text-transform: uppercase;
 }
 .description {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
@@ -137,7 +145,9 @@ body{
     background-color: var(--rare-background-color);
 }
 .team-item {
-    color: var(--background-color);
+    background-color: var(--background-team-item-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-name {
     color: var(--title-text-color);
@@ -153,13 +163,18 @@ body{
 
 /* оформлення футера */
 .footer {
-    background: #2F303A
+    background: var(--background-hero-color);
 }
-.footer .logo {
+.footer-logo {
     color: var(--simple-white-text-color);
+    text-decoration-line: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
-.address .supercription {
+.address-supercription {
     color: var(--simple-white-text-color);
     text-decoration-line: none;
     font-style: normal;  
@@ -167,40 +182,39 @@ body{
     line-height: 1.71;
 }
 
-.address .supercription:hover,
-.address .supercription:focus {
+.address-supercription:hover,
+.address-supercription:focus {
     color: var(--accent-color);
 }
-.address .mail {
-    color: var(--simple-white-text-color);
+.address-mail {
+    color: var(--footer-mail-tel-color);
     text-decoration-line: none;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
 }
 
-.address .mail:hover,
-.address .mail:focus {
+.address-mail:hover,
+.address-mail:focus {
     color: var(--accent-color);
 }
 
-.address .tel {
-    color: var(--simple-white-text-color);
+.address-tel {
+    color: var(--footer-mail-tel-color);
     text-decoration-line: none;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
+    color: var (--footer-mail-tel-color);
 }
 
-.address .tel:hover,
-.address .tel:focus {
+.address-tel:hover,
+.address-tel:focus {
     color: var(--accent-color);
 }
 
 /* оформлення Портфоліо */
-.filter button {
+.filter-button {
     background-color: var(--rare-background-color);
     color: var(--title-text-color);
     cursor: pointer;
@@ -211,10 +225,10 @@ body{
     text-align: center;
 }
 
-.filter button:hover,
-.filter button:focus {
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--accent-color);
-    color: var(--simple-white-text-color)
+    color: var(--simple-white-text-color);
 }
 
 .portfolio {
